@@ -18,44 +18,42 @@ AIエージェントは複数のサブエージェント（Researcher, Architect
 - 後から「あのリサーチ結果どこ？」となる
 - 学習のためのフィードバックループが構築できない
 
+**UOCS なし：**
 ```mermaid
 graph LR
-    subgraph "UOCS なし"
-        A[サブエージェント実行] --> B[結果表示]
-        B --> C[セッション終了]
-        C --> D[消失 💨]
-    end
+    A[サブエージェント実行] --> B[結果表示]
+    B --> C[セッション終了]
+    C --> D[消失]
 ```
 
+**UOCS あり：**
 ```mermaid
 graph LR
-    subgraph "UOCS あり"
-        E[サブエージェント実行] --> F[結果表示]
-        F --> G[UOCS キャプチャ]
-        G --> H[MEMORY/ に保存]
-        H --> I[永続的に参照可能 ✅]
-    end
+    E[サブエージェント実行] --> F[結果表示]
+    F --> G[UOCS キャプチャ]
+    G --> H[MEMORY に保存]
+    H --> I[永続的に参照可能]
 ```
 
 ## アーキテクチャ
 
 ```mermaid
 flowchart TB
-    subgraph HOOKS["Hook System"]
-        SS[SubagentStop<br/>イベント]
-        AOC[AgentOutputCapture<br/>.hook.ts]
+    subgraph HOOKS[Hook System]
+        SS[SubagentStop]
+        AOC[AgentOutputCapture.hook.ts]
     end
     
-    subgraph EXTRACTION["メタデータ抽出"]
+    subgraph EXTRACTION[Metadata Extraction]
         ME[metadata-extraction.ts]
         LE[learning-utils.ts]
     end
     
-    subgraph OUTPUT["出力先"]
-        MEM[MEMORY/]
-        RES[RESEARCH/]
-        DEC[DECISION/]
-        IMP[IMPLEMENTATION/]
+    subgraph OUTPUT[Output]
+        MEM[MEMORY]
+        RES[RESEARCH]
+        DEC[DECISION]
+        IMP[IMPLEMENTATION]
     end
     
     SS --> AOC
@@ -135,11 +133,11 @@ interface AgentInstanceMetadata {
 
 ```mermaid
 flowchart TD
-    A[メタデータ抽出開始] --> B{description に<br/>[agent-type-N] あり?}
+    A[メタデータ抽出開始] --> B{description?}
     B -->|Yes| C[抽出完了]
-    B -->|No| D{prompt に<br/>[AGENT_INSTANCE:] あり?}
+    B -->|No| D{prompt?}
     D -->|Yes| C
-    D -->|No| E{subagent_type<br/>あり?}
+    D -->|No| E{subagent_type?}
     E -->|Yes| F[タイプのみ抽出]
     E -->|No| G[空のメタデータ]
 ```
@@ -224,15 +222,12 @@ Pattern: /^(\d{1,2})(?:\s*[-–]\s*(.+))?$/
 
 ```mermaid
 graph TD
-    subgraph "シグナルキャプチャ"
-        U[ユーザー入力] --> E{明示的評価?}
-        E -->|"7"| R1[rating: 7]
-        E -->|No| S{感情分析}
-        S -->|ポジティブ| R2[rating: 9-10]
-        S -->|ネガティブ| R3[rating: 1-2]
-        S -->|中立| R4[スキップ]
-    end
-    
+    U[ユーザー入力] --> E{明示的評価?}
+    E -->|Yes| R1[rating: 7]
+    E -->|No| S{感情分析}
+    S -->|ポジティブ| R2[rating: 9-10]
+    S -->|ネガティブ| R3[rating: 1-2]
+    S -->|中立| R4[スキップ]
     R1 --> L[ratings.jsonl]
     R2 --> L
     R3 --> L
@@ -285,26 +280,22 @@ ntfy や Discord を通じて、長時間タスクの完了を通知。
 
 UOCS の役割：
 
-```mermaid
-mindmap
-  root((UOCS))
-    出力キャプチャ
-      サブエージェント結果保存
-      カテゴリ別整理
-      検索可能なMarkdown
-    メタデータ抽出
-      エージェントインスタンスID
-      親子関係追跡
-      セッション連携
-    学習シグナル
-      明示的評価
-      暗黙的感情分析
-      学習カテゴリ分類
-    連携
-      Observability
-      プッシュ通知
-      Voice システム
-```
+- **出力キャプチャ**
+  - サブエージェント結果保存
+  - カテゴリ別整理
+  - 検索可能なMarkdown
+- **メタデータ抽出**
+  - エージェントインスタンスID
+  - 親子関係追跡
+  - セッション連携
+- **学習シグナル**
+  - 明示的評価
+  - 暗黙的感情分析
+  - 学習カテゴリ分類
+- **連携**
+  - Observability
+  - プッシュ通知
+  - Voice システム
 
 UOCS により、PAI は「やりっぱなし」ではなく「学習し続ける」AIエージェント基盤になる。すべてのエージェント出力が自動的に整理・保存され、後から参照でき、フィードバックループが構築される。
 
