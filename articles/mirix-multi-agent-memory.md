@@ -122,7 +122,11 @@ sequenceDiagram
 | ベンチマーク | MIRIX | ベースライン | 改善 |
 |------------|-------|------------|------|
 | **ScreenshotVQA** | - | RAG | +35% 精度向上 |
-| **LOCOMO** | 85.4% | 従来手法 | SOTA達成 |
+| **[LOCOMO](https://arxiv.org/abs/2402.17753)** | 85.4% | 従来手法 | SOTA達成 |
+
+:::message
+**LOCOMO（Long-term Conversational Memory）** は、LLM の長期会話記憶を評価するベンチマーク。平均300ターン・9Kトークン・最大35セッションの長期対話データで評価。
+:::
 
 **ScreenshotVQA**：
 - 約20,000枚の高解像度スクリーンショットを含むマルチモーダルベンチマーク

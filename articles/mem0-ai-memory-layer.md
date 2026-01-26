@@ -16,7 +16,11 @@ https://github.com/mem0ai/mem0
 
 ## ベンチマーク結果
 
-論文（arXiv:2504.19413）での LOCOMO ベンチマーク結果：
+論文（arXiv:2504.19413）での [LOCOMO](https://arxiv.org/abs/2402.17753) ベンチマーク結果：
+
+:::message
+**LOCOMO（Long-term Conversational Memory）** は、LLM の長期会話記憶を評価するベンチマーク。平均300ターン・9Kトークン・最大35セッションの長期対話データセットで、single-hop / temporal / multi-hop / open-domain の4カテゴリで評価。
+:::
 
 | 指標 | mem0 | 比較対象 |
 |-----|------|---------|
