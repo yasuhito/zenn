@@ -14,6 +14,32 @@ https://github.com/mem0ai/mem0
 
 コンセプトは「**The Memory Layer for Personalized AI**」。ユーザーの好みを記憶し、個々のニーズに適応し、時間とともに学習する。
 
+## なぜ mem0 が有効か
+
+従来の「フルコンテキスト方式」との比較：
+
+```mermaid
+flowchart LR
+    subgraph FULL[フルコンテキスト方式]
+        A[会話履歴<br/>10,000 tokens] --> B[LLM]
+        B --> C[遅い・高い・見落とす]
+    end
+```
+
+```mermaid
+flowchart LR
+    subgraph MEM0[mem0 方式]
+        D[関連メモリ<br/>500 tokens] --> E[LLM]
+        E --> F[速い・安い・的確]
+    end
+```
+
+**問題**: 会話履歴をすべて送ると、LLM が「重要な部分を見落とす」
+
+**解決**: mem0 は重要な事実だけ抽出・保存し、必要なメモリだけ検索・注入
+
+「全部覚えてる」より「必要なことだけ覚えてる」ほうが実用的。
+
 ## ベンチマーク結果
 
 論文（arXiv:2504.19413）での [LOCOMO](https://arxiv.org/abs/2402.17753) ベンチマーク結果：
@@ -27,8 +53,6 @@ https://github.com/mem0ai/mem0
 | **精度** | +26% | vs OpenAI Memory |
 | **レイテンシ** | -91% | vs フルコンテキスト |
 | **トークン使用量** | -90% | vs フルコンテキスト |
-
-フルコンテキストを送るより、mem0 でメモリを管理したほうが速くて安い。
 
 ## 3レベルのメモリ
 
