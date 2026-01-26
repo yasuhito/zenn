@@ -274,7 +274,7 @@ if (toolInput?.run_in_background === true) {
 }
 ```
 
-ntfy や Discord を通じて、長時間タスクの完了を通知。
+[ntfy](https://ntfy.sh)（オープンソースのプッシュ通知サービス）や Discord を通じて、長時間タスクの完了を通知。
 
 ## まとめ
 
