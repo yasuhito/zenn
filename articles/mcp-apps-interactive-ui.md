@@ -3,7 +3,7 @@ title: "MCP Apps 登場！AI チャット内でインタラクティブ UI が�
 emoji: "🖼️"
 type: "tech"
 topics: ["mcp", "claude", "ai", "anthropic"]
-published: false
+published: true
 ---
 
 ## MCP Apps とは
