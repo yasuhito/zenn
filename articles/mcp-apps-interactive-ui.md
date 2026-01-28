@@ -36,17 +36,24 @@ https://x.com/claudeai/status/2015851783655194640
 
 ## アーキテクチャ
 
-```
-┌─────────────────────────────────────────────────┐
-│  MCP Client (Claude, VS Code, Goose)           │
-│    ├── Tool 呼び出し                            │
-│    ├── UI Resource 取得 (ui:// スキーム)        │
-│    └── サンドボックス iframe でレンダリング      │
-├─────────────────────────────────────────────────┤
-│  MCP Server                                     │
-│    ├── Tool 定義 + _meta.ui.resourceUri         │
-│    └── UI Resources (HTML/JS バンドル)          │
-└─────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph Client["MCP Client (Claude, VS Code, Goose)"]
+        A[Tool 呼び出し]
+        B[UI Resource 取得<br/>ui:// スキーム]
+        C[サンドボックス iframe で<br/>レンダリング]
+    end
+    
+    subgraph Server["MCP Server"]
+        D[Tool 定義<br/>+ _meta.ui.resourceUri]
+        E[UI Resources<br/>HTML/JS バンドル]
+    end
+    
+    A --> D
+    D --> B
+    B --> E
+    E --> C
+    C <-->|JSON-RPC<br/>postMessage| D
 ```
 
 1. ツール定義に `_meta.ui.resourceUri` を追加
