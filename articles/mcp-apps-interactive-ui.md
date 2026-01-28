@@ -21,6 +21,40 @@ https://x.com/claudeai/status/2015851783655194640
 
 といったことが可能になる。
 
+## デモ動画まとめ
+
+まずは X で見つけた印象的なデモを紹介する。
+
+### 2D プラットフォーマーゲーム
+
+Claude Desktop 内でゲームが動作。
+
+https://x.com/banjtheman/status/2016337474260238737
+
+### リアルタイムチェス
+
+チャット内でチェス対戦が可能。
+
+https://x.com/gching/status/2016045307948081595
+
+### LIFX ライトコントロール
+
+VS Code 内で照明をコントロールするパネル。AI が意図を汲み取れなかったときのフォールバック UI として活用。
+
+https://x.com/burkeholland/status/2016208751200457088
+
+### Yahoo Finance 株価データ
+
+Cursor + Opus で株価データをインタラクティブに表示。
+
+https://x.com/mirko_monti6/status/2016272708309492175
+
+### Generative UI Playground
+
+3種類の Generative UI（Static, Declarative, Open-Ended）を比較できるプレイグラウンド。
+
+https://x.com/nathan_tarbert/status/2016205731805200525
+
 ## なぜ Web アプリではなく MCP Apps なのか
 
 「Web アプリへのリンクを返せばいいのでは？」と思うかもしれない。MCP Apps が優れている点：
@@ -62,40 +96,6 @@ flowchart TB
 2. `ui://` スキームで HTML/JS を配信
 3. ホストがサンドボックス iframe 内でレンダリング
 4. JSON-RPC over postMessage で双方向通信
-
-## デモ動画まとめ
-
-X で見つけた印象的なデモを紹介する。
-
-### 2D プラットフォーマーゲーム
-
-Claude Desktop 内でゲームが動作。
-
-https://x.com/banjtheman/status/2016337474260238737
-
-### リアルタイムチェス
-
-チャット内でチェス対戦が可能。
-
-https://x.com/gching/status/2016045307948081595
-
-### LIFX ライトコントロール
-
-VS Code 内で照明をコントロールするパネル。AI が意図を汲み取れなかったときのフォールバック UI として活用。
-
-https://x.com/burkeholland/status/2016208751200457088
-
-### Yahoo Finance 株価データ
-
-Cursor + Opus で株価データをインタラクティブに表示。
-
-https://x.com/mirko_monti6/status/2016272708309492175
-
-### Generative UI Playground
-
-3種類の Generative UI（Static, Declarative, Open-Ended）を比較できるプレイグラウンド。
-
-https://x.com/nathan_tarbert/status/2016205731805200525
 
 ## 対応クライアント
 
