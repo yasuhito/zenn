@@ -271,10 +271,6 @@ PAI の AI インストールは「AI がツールをセットアップする」
 
 この仕組みは、AI エージェントのスキルやプラグインを配布する際の参考になるだろう。
 
-## 関連記事
-
-https://zenn.dev/yasuhito/articles/pai-personal-ai-infrastructure
-
 ## 参考リンク
 
 - [PAI GitHub](https://github.com/danielmiessler/PAI)
