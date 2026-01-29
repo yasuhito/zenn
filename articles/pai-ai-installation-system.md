@@ -8,7 +8,7 @@ published: true
 
 ## はじめに
 
-[PAI (Personal AI Infrastructure)](https://github.com/danielmiessler/PAI) は、Daniel Miessler が公開している「パーソナル AI スタック」だ。Claude Code などの AI エージェントに、記憶・スキル・フックなどの機能を追加できる。
+[PAI (Personal AI Infrastructure)](https://github.com/danielmiessler/PAI) は、Daniel Miessler が公開している「パーソナル AI スタック」だ。Claude Code などの AI エージェントに、記憶・スキル・フックなどの機能を追加できる。PAI の概要については[前回の記事](https://zenn.dev/yasuhito/articles/pai-personal-ai-infrastructure)で解説した。
 
 PAI の面白い特徴の一つが **「AI によるインストール」**。人間がコマンドを一つずつ打つのではなく、AI エージェントに「このパックをインストールして」と頼むと、AI が対話形式でインストールを進めてくれる。
 
@@ -270,6 +270,10 @@ PAI の AI インストールは「AI がツールをセットアップする」
 - AI が環境を分析し、対話形式で進め、検証まで行う
 
 この仕組みは、AI エージェントのスキルやプラグインを配布する際の参考になるだろう。
+
+## 関連記事
+
+https://zenn.dev/yasuhito/articles/pai-personal-ai-infrastructure
 
 ## 参考リンク
 
