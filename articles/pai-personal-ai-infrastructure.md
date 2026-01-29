@@ -81,7 +81,6 @@ flowchart LR
 
 PAI の特徴的な概念が **ISC テーブル**。「理想の状態とは何か」を明示的に定義する。
 
-```markdown
 | # | What Ideal Looks Like | Source | Capability | Status |
 |---|----------------------|--------|------------|--------|
 | 1 | パターンのリサーチ完了 | INFERRED | research | PENDING |
@@ -89,7 +88,6 @@ PAI の特徴的な概念が **ISC テーブル**。「理想の状態とは何�
 | 3 | テーマ状態が永続化 | EXPLICIT | engineer | PENDING |
 | 4 | TypeScript で実装 | INFERRED | - | DONE |
 | 5 | テスト通過 | IMPLICIT | qa_tester | PENDING |
-```
 
 Source の種類：
 - **EXPLICIT** - ユーザーが明示的に要求
