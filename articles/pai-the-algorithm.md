@@ -16,7 +16,6 @@ published: true
 
 THE ALGORITHM の中心にあるのが **ISC（理想状態の基準）**。「何が達成されたら完璧なのか」を表にしたものだ。
 
-```markdown
 | # | 理想の状態 | 出典 | 担当 | 状態 |
 |---|-----------|------|------|------|
 | 1 | 良いパターンを調査 | INFERRED | 🔬 perplexity | ⏳ PENDING |
@@ -24,7 +23,6 @@ THE ALGORITHM の中心にあるのが **ISC（理想状態の基準）**。「�
 | 3 | テーマ状態が保存される | EXPLICIT | 🤖 engineer | ⏳ PENDING |
 | 4 | TypeScript を使用 | INFERRED | — | ✅ DONE |
 | 5 | テストが通る | IMPLICIT | ✅ qa_tester | ⏳ PENDING |
-```
 
 ### 出典（Source）の 3 種類
 
