@@ -3,7 +3,7 @@ title: "PAI の AI インストール：エージェントがエージェント�
 emoji: "🤖"
 type: "tech"
 topics: ["ai", "claude", "automation", "pai"]
-published: false
+published: true
 ---
 
 ## はじめに
