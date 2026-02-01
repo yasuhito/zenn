@@ -3,7 +3,7 @@ title: "PAI THE ALGORITHM：期待を超える結果を出す 7 フェーズ実�
 emoji: "🎯"
 type: "tech"
 topics: ["ai", "claude", "pai", "methodology"]
-published: false
+published: true
 ---
 
 ## THE ALGORITHM とは
