@@ -3,7 +3,7 @@ title: "PAI: 人間中心のAIエージェント基盤を理解する"
 emoji: "🤖"
 type: "tech"
 topics: ["ai", "agent", "llm", "claudecode"]
-published: true
+published: false
 ---
 
 ## PAI とは
