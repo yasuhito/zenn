@@ -3,7 +3,7 @@ title: "PAI Browser Skill：デバッグファーストのブラウザ自動化"
 emoji: "🌐"
 type: "tech"
 topics: ["ai", "claude", "pai", "playwright"]
-published: true
+published: false
 ---
 
 ## Browser Skill とは

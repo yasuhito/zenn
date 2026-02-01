@@ -3,7 +3,7 @@ title: "PAI StatusLine：ターミナルに AI の状態を常時表示"
 emoji: "📊"
 type: "tech"
 topics: ["ai", "claude", "pai", "terminal"]
-published: true
+published: false
 ---
 
 ## StatusLine とは

@@ -3,7 +3,7 @@ title: "PAI System Skill：PAI 環境のメンテナンスと整合性チェッ�
 emoji: "🔧"
 type: "tech"
 topics: ["ai", "claude", "pai", "maintenance"]
-published: true
+published: false
 ---
 
 ## System Skill とは

@@ -3,7 +3,7 @@ title: "PAI Observability Server：マルチエージェント監視ダッシュ
 emoji: "📊"
 type: "tech"
 topics: ["ai", "claude", "pai", "monitoring"]
-published: true
+published: false
 ---
 
 ## Observability Server とは

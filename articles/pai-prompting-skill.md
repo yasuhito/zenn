@@ -3,7 +3,7 @@ title: "PAI Prompting Skill：プロンプトを書くためのプロンプト"
 emoji: "📝"
 type: "tech"
 topics: ["ai", "claude", "pai", "prompt"]
-published: true
+published: false
 ---
 
 ## Prompting Skill とは

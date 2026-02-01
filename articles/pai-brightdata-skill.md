@@ -3,7 +3,7 @@ title: "PAI BrightData Skill：4 段階フォールバックでどんな URL も
 emoji: "🌐"
 type: "tech"
 topics: ["ai", "claude", "pai", "scraping"]
-published: true
+published: false
 ---
 
 ## BrightData Skill とは

@@ -3,7 +3,7 @@ title: "PAI AnnualReports Skill：570 以上のセキュリティレポートを
 emoji: "📑"
 type: "tech"
 topics: ["ai", "claude", "pai", "security"]
-published: true
+published: false
 ---
 
 ## AnnualReports Skill とは

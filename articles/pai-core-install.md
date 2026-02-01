@@ -3,7 +3,7 @@ title: "PAI Core Install：パーソナル AI の「OS」となる基盤パッ�
 emoji: "🧠"
 type: "tech"
 topics: ["ai", "claude", "pai", "agent"]
-published: true
+published: false
 ---
 
 ## Core Install とは

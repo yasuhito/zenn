@@ -3,7 +3,7 @@ title: "PAI Hook System：Claude Code のイベントを自動化する基盤"
 emoji: "🔌"
 type: "tech"
 topics: ["ai", "claude", "pai", "automation"]
-published: true
+published: false
 ---
 
 ## Hook System とは

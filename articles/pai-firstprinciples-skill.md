@@ -3,7 +3,7 @@ title: "PAI FirstPrinciples Skill：イーロン・マスク式の第一原理�
 emoji: "💡"
 type: "tech"
 topics: ["ai", "claude", "pai", "thinking"]
-published: true
+published: false
 ---
 
 ## FirstPrinciples Skill とは
