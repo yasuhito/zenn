@@ -3,7 +3,7 @@ title: "PAI Agents Skill：動的エージェント生成とパーソナリテ�
 emoji: "🤖"
 type: "tech"
 topics: ["ai", "claude", "pai", "agent"]
-published: false
+published: true
 ---
 
 ## Agents Skill とは
