@@ -3,7 +3,7 @@ title: "PAI Art Skill：一貫したスタイルで AI 画像生成"
 emoji: "🎨"
 type: "tech"
 topics: ["ai", "claude", "pai", "image"]
-published: false
+published: true
 ---
 
 ## Art Skill とは
