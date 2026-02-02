@@ -3,7 +3,7 @@ title: "PAI Voice System：AI に声を与える TTS 通知サーバー"
 emoji: "🔊"
 type: "tech"
 topics: ["ai", "claude", "pai", "tts"]
-published: false
+published: true
 ---
 
 ## Voice System とは
