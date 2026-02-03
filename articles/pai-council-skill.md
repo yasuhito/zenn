@@ -3,7 +3,7 @@ title: "PAI Council Skill：4 エージェント議論で最良の答えを見�
 emoji: "🗣️"
 type: "tech"
 topics: ["ai", "claude", "pai", "multiagent"]
-published: false
+published: true
 ---
 
 ## Council Skill とは
