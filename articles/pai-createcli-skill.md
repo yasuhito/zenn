@@ -3,7 +3,7 @@ title: "PAI CreateCLI Skill：TypeScript CLI を 3 段階で自動生成"
 emoji: "⌨️"
 type: "tech"
 topics: ["ai", "claude", "pai", "cli"]
-published: false
+published: true
 ---
 
 ## CreateCLI Skill とは
