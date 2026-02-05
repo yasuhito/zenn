@@ -3,7 +3,7 @@ title: "PAI CreateSkill Skill：PAI スキルの雛形生成と検証"
 emoji: "🛠️"
 type: "tech"
 topics: ["ai", "claude", "pai", "development"]
-published: false
+published: true
 ---
 
 ## CreateSkill Skill とは
