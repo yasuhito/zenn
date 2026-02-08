@@ -3,7 +3,7 @@ title: "PAI OSINT Skill：倫理的な公開情報インテリジェンス"
 emoji: "🔍"
 type: "tech"
 topics: ["ai", "claude", "pai", "osint"]
-published: false
+published: true
 ---
 
 ## OSINT Skill とは
