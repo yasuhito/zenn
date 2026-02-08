@@ -3,7 +3,7 @@ title: "PAI PrivateInvestigator Skill：倫理的な人探しで昔の友人と�
 emoji: "🕵️"
 type: "tech"
 topics: ["ai", "claude", "pai", "osint"]
-published: false
+published: true
 ---
 
 ## PrivateInvestigator Skill とは
