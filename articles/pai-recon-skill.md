@@ -3,7 +3,7 @@ title: "PAI Recon Skill：セキュリティ偵察の 5 つのワークフロー
 emoji: "🔎"
 type: "tech"
 topics: ["ai", "claude", "pai", "security"]
-published: false
+published: true
 ---
 
 ## Recon Skill とは
