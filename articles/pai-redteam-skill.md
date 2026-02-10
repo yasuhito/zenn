@@ -3,7 +3,7 @@ title: "PAI RedTeam Skill：32 エージェントでアイデアを徹底攻撃"
 emoji: "🔴"
 type: "tech"
 topics: ["ai", "claude", "pai", "analysis"]
-published: false
+published: true
 ---
 
 ## RedTeam Skill とは
