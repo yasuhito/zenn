@@ -3,7 +3,7 @@ title: "PAI Research Skill：複数エージェント並列リサーチシステ
 emoji: "🔬"
 type: "tech"
 topics: ["ai", "claude", "pai", "research"]
-published: false
+published: true
 ---
 
 ## Research Skill とは
