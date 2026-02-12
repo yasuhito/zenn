@@ -3,7 +3,7 @@ title: "PAI TELOS Skill：人生 OS で目標・信念・学びを管理"
 emoji: "🎯"
 type: "tech"
 topics: ["ai", "claude", "pai", "lifeos"]
-published: false
+published: true
 ---
 
 ## TELOS Skill とは
