@@ -3,7 +3,7 @@ title: "PAI の UOCS: エージェント出力を自動キャプチャする仕�
 emoji: "📝"
 type: "tech"
 topics: ["ai", "agent", "llm", "claudecode"]
-published: false
+published: true
 ---
 
 ## UOCS とは
